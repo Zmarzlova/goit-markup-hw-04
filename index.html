@@ -47,15 +47,19 @@
         <div class="container-connect">
           <ul class="header-list">
             <li class="header-item">
-              <a
-                class="header-link link mailto"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="header-link link" href="mailto:info@devstudio.com">
+                <svg class="header-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li class="header-item">
-              <a class="header-link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+              <a class="header-link link" href="tel:+380961111111">
+                <svg class="header-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -76,9 +80,11 @@
           <h2 class="visually-hidden">Переваги</h2>
           <ul class="features-list">
             <li class="features-item">
-              <svg class="features-icon" width="70" height="70">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
+              <div class="features-icons">
+                <svg class="features-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="features-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -86,6 +92,11 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-icons">
+                <svg class="features-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="features-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -93,12 +104,22 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-icons">
+                <svg class="features-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="features-title">ПЛАНУВАННЯ</h3>
               <p class="features-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="features-item">
+              <div class="features-icons">
+                <svg class="features-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="features-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -289,7 +310,7 @@
             <li class="clients-item">
               <a href="" class="clients-link link">
                 <svg class="team-soc-icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo-2"></use>
+                  <use href="./images/icons.svg#icon-Logo-1"></use>
                 </svg>
               </a>
             </li>
@@ -334,61 +355,67 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo link" href="./index.html"
-          >Web<span class="logo-secondary">Studio</span></a
-        >
-        <address class="address">
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a class="footer-link link address" href=""
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="footer-item">
-              <a class="footer-link link" href="malto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer-item">
-              <a class="footer-link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div class="container footer-soc">
-        <a class="footer-join-link link" href="./index.html">приєднуйтесь</a>
-        <ul class="footer-soc-list list">
-          <li class="footer-soc-item">
-            <a href="" target="_blank" class="footer-soc-link link">
-              <svg class="footer-soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-soc-item">
-            <a href="" target="_blank" class="footer-soc-link link"
-              ><svg class="footer-soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-soc-item">
-            <a href="" target="_blank" class="footer-soc-link link"
-              ><svg class="footer-soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-soc-item">
-            <a href="" target="_blank" class="footer-soc-link link"
-              ><svg class="footer-soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="footer-wrap">
+          <div class="footer-left">
+            <a class="logo link" href="./index.html"
+              >Web<span class="logo-secondary">Studio</span></a
+            >
+            <address class="address">
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a class="footer-link link address" href=""
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="malto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-right">
+            <a class="footer-join-link link" href="./index.html"
+              >приєднуйтесь</a
+            >
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="" target="_blank" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" target="_blank" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" target="_blank" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" target="_blank" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

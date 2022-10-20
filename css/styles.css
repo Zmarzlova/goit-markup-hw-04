@@ -135,13 +135,15 @@ border-bottom: 1px solid #ECECEC;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: inline-block;
+  display: flex;
+  align-items: baseline;
   padding: 32px 0;
 }
 
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .header-link {
@@ -149,17 +151,12 @@ border-bottom: 1px solid #ECECEC;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: inline-block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.header-link.mailto::before {
-  display: inline-block;
-  content: '';
-  width: 16px;
-  height: 12px;
-  background: #2196F3;
+  align-items: center;
+  gap: 10px;
+  fill:var(--primery-text-color);
 }
 
 /* -------Hero------- */
@@ -243,6 +240,17 @@ border-bottom: 1px solid #ECECEC;
 }
 .features-text {
   line-height: 1.71;
+}
+
+.features-icons{
+display: flex;
+width: 270px;
+height: 120px;
+align-items: center;
+justify-content: center;
+background-color: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
 }
 
 /* -------Works------- */
@@ -392,6 +400,12 @@ border-bottom: 1px solid #ECECEC;
   display: flex;
   align-items: baseline;
 }
+
+.footer-wrap{
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
@@ -424,8 +438,6 @@ border-bottom: 1px solid #ECECEC;
   font-style: normal;
 }
 
-.footer-soc {}
-
 .footer-join-link {
     color: var(--additional-color);
     font-weight: 700;
@@ -442,7 +454,6 @@ border-bottom: 1px solid #ECECEC;
   margin-top: 20px; 
   
 }
-
 
 .footer-soc-item {
   width: 44px;
@@ -510,6 +521,11 @@ background-color:var(--additional-color);
 
 .filter-item{
   width: calc((100% - 60px) / 3);
+}
+
+.filter-item:hover{
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .filter-wrap{
