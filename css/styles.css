@@ -143,7 +143,7 @@ border-bottom: 1px solid #ECECEC;
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
+  
 }
 
 .header-link {
@@ -156,7 +156,10 @@ border-bottom: 1px solid #ECECEC;
   padding-bottom: 32px;
   align-items: center;
   gap: 10px;
-  fill:var(--primery-text-color);
+}
+
+.header-icon{
+  fill: currentColor;
 }
 
 /* -------Hero------- */
@@ -168,7 +171,10 @@ border-bottom: 1px solid #ECECEC;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
+
 .hero-title {
   color: var(--additional-color);
   font-weight: 900;
@@ -343,14 +349,16 @@ margin-bottom: 30px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  fill: #AFB1B8;
-  
+  color: #AFB1B8;
 }
 
+.team-soc-icon{
+  fill: currentColor;
+}
 .team-soc-link:hover,
 .team-soc-link:focus{
   background-color:  var(--accent-color);
-  fill: var(--additional-color);
+  color: var(--additional-color);
 }
 
 /* -------Clients------- */
@@ -381,15 +389,19 @@ margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
+  color: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 
 .clients-link:hover,
 .clients-link:focus{
-  fill: var(--accent-color);
+  color: var(--accent-color);
   border-color:var(--accent-color);
+}
+
+.clients-soc-icon{
+  fill: currentColor;
 }
 
 /* -------Footer------- */
@@ -397,8 +409,7 @@ margin-bottom: 30px;
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
-  display: flex;
-  align-items: baseline;
+ 
 }
 
 .footer-wrap{
@@ -469,7 +480,6 @@ margin-bottom: 30px;
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--additional-color);
 }
 
 .footer-soc-link:hover,
@@ -477,6 +487,9 @@ margin-bottom: 30px;
   background-color: var(--accent-color);
 }
 
+.footer-soc-icon{
+  fill: var(--additional-color);
+}
 
 /* -------Оформление Portfolio------- */
 
@@ -524,7 +537,11 @@ background-color:var(--additional-color);
   width: calc((100% - 60px) / 3);
 }
 
-.filter-item:hover{
+.filter-link{
+  display: block;
+}
+.filter-link:hover,
+.filter-link:focus {
   border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
